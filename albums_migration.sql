@@ -2,10 +2,12 @@
 
  DROP TABLE IF EXISTS albums;
 
- CREATE TABLE quotes (
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    author_first_name VARCHAR(50) DEFAULT 'NONE',
-    author_last_name  VARCHAR(100) NOT NULL,
-    content TEXT NOT NULL,
+ CREATE TABLE albums (
+    id INT UNSIGNED AUTO_INCREMENT,
+    artist VARCHAR(50),
+    name  VARCHAR(50),
+    release_date YEAR(4),
+    sales FLOAT,
+    genre VARCHAR(100),
     PRIMARY KEY (id)
 );
