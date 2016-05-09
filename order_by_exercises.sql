@@ -10,10 +10,11 @@ AND (
 ORDER BY last_name, first_name;
 
 
-SELECT last_name
+SELECT emp_no, last_name
 FROM employees
 WHERE last_name LIKE 'E%'
-AND last_name LIKE '%E';
+AND last_name LIKE '%E'
+ORDER BY emp_no;
 
 SELECT *
 FROM employees
