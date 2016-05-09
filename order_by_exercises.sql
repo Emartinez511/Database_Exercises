@@ -7,7 +7,7 @@ AND (
     first_name IN ('Irena', 'Vidya')
     OR first_name = 'Maya'
 )
-ORDER BY first_name, last_name;
+ORDER BY last_name, first_name;
 
 
 SELECT last_name
