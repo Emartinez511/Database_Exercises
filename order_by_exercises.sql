@@ -7,14 +7,14 @@ AND (
     first_name IN ('Irena', 'Vidya')
     OR first_name = 'Maya'
 )
-ORDER BY last_name, first_name;
+ORDER BY last_name DESC, first_name DESC;
 
 
 SELECT emp_no, last_name
 FROM employees
 WHERE last_name LIKE 'E%'
 AND last_name LIKE '%E'
-ORDER BY emp_no;
+ORDER BY emp_no DESC;
 
 SELECT *
 FROM employees
